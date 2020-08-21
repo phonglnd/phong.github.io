@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Applying CNN For Cardiac Arrhythmia Classification Using ECG Data",
+    "area": "Computer Science",
+    "description": "Electrocardiography is the process of producing an electrocardiogram (ECG or EKG). It is a graph of voltage versus time of the electrical activity of the heart using electrodes placed on the skin. In reality, beside used to diagnose in medicine, ECG is also appeared in computer science researches with machine learning problems. In this project, I have made research to build the model using Convolutional Neural Network (CNN) and Residual Network (ResNet) architecture to classify 9 types of cardiac arrhythmia based on ECG data.</br>I used Python with TensorFlow and Keras to build model and execute classification algorithm. To execute classification algorithm, firstly, raw ECG signals must be denoised throughout 3 filters. Then, set of denoised signals is divided into segments thanks to a peak detection algorithm. Lastly, the CNN+ResNet model takes an input as each segment to classify type of arrhythmia. After this project, I got high result with 94% in accuracy. Below is figures of process of classification algorithm.</br></br><img class='img-format' src='figures/models.png' /></br>"
+  },
+  {
+    "title": "Open Multiple-choice: Solution for Online Exam",
+    "area": "",
+    "description": "This was my challenge project to apply for  my faculty's laboratory member. I made Web-based Application in .NET and organized data in SQL Server. This solution provided users organizing and doing multiple-choice examination online. Users can create and manage exam, add questions and answers, set limited-time, and let examinees do exam by a secret code generated randomly. They can also manage result and make statistics in application."
+  },
+  {
+    "title": "The Smart Gloves For The Visually Impaired",
+    "area": "Embedded System",
+    "description": "In this project, I have made research combining multiple electronic components to made gloves for the blinded. The gloves have 2 main functions. For the left, a mobile phone was designed under a glove with buttons, microphone and internal speaker installed on knuckles. User can make and receive a call thoughout SIM900A module which is a device used to communicate with anyone. For the right, an ultrasonic sensor was installed on the back of the hand and replaced for walking sticks to help the blind move.</br>I worked with C language to program embedded part and .NET to make a windows application for extra function. After finish in 2016, I took part in ISEF Vietnam (Vietnam Science and Engineering Fair) contest and got an extra prize. Then, I continued joining National Youth Information Technology contest in the same year and got 4th prize. With this project, I was be a guest in VTV talkshow - Ca Phe Sang program 😃 in August 2016."
+  },
+  {
+    "title": "The Fire Warning IOT-System",
+    "area": "Embedded System & Computer Science",
+    "description": "In this project, I made a system with 2 main parts - device and management software, with communication based on IoT model. I worked with C language for embedded programming and .NET to make management software. For device, it was designed with combining of electronic components to detect fire in the area where device located, then generate WEB API including data of environment. For the software, it is .NET Windows Application, provide and equip for Fire Police Department with safety management solutions in an area. The software will check and get data from API continuously to follow status of where devices located. When emergency occurs, the software will give alarm and direct to location of fire.</br>After finish, I took part in ISEF Vietnam (Vietnam Science and Engineering Fair) contest in 2015 and got 4th prize and an extra prize. Then, I continued joining National Youth Information Technology contest in the same year and got 3rd prize.</br>In 2017, I made startup plan from this project and call for investment. Thanks to my business plan, I was a winner of CiC Startup Contest and placed in TOP 60 startup projects in Startup Wheel in the same year. But, in order to focus on my education and reach my passion, I paused my project upto now. 😊"
+  },
+  {
+    "title": "PiSchool: Educational Social Network",
+    "area": "Computer Science",
+    "description": "In this project, I made a Web-based Application with .NET Framework and SQL Server to connect all people in my school. This project provides for users an environment to share study document and resources, give notifications and send-receive messages. For this project, I got the 4th prize in National Youth Information Technology contest in 2015."
+  },
+  {
+    "title": "Applying Cloud Computing For Accessing Data In The Software Simulating The 'Road To Olympia' Competition",
+    "area": "Computer Science",
+    "description": "In this project, I made a Windows Application with .NET Framework and SQL Server to create a solution for organizing the 'Road To Olympia' Competition (Duong Len Dinh Olympia) with store-access-data method based on Cloud Computing. All parts were organized to be a system, including Orgarnizer-part and Contestant-part, interacted together thoughout SQL connection.</br>For this project, I took part in ISEF Vietnam (Vietnam Science and Engineering Fair) contest, National Youth Information Technology contest 2014 and got 3rd prize."
+  },
+  {
+    "title": "Dictionary of Geographical Terms",
+    "area": "",
+    "description": "This is my first software project and I made it in 2013. This is a Windows Application with .NET Framework to help students look-up terms about Geography like a dictionary with more than 1500 words. I did self-study to know how to work with LinQ to store and access data under XML file.</br>For this project, I took part in National Youth Information Technology contest 2013 but not placed in TOP."
+  }
+]
