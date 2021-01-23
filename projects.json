@@ -31,7 +31,7 @@
   },
   {
     "title": "Dictionary of Geographical Terms",
-    "area": "Software",
+    "area": "",
     "description": "This is my first software project and I made it in 2013. This is a Windows Application with .NET Framework to help students look-up terms about Geography like a dictionary with more than 1500 words. I did self-study to know how to work with LinQ to store and access data under XML file.</br>For this project, I took part in National Youth Information Technology contest 2013 but not placed in TOP."
   }
 ]
