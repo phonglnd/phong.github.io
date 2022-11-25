@@ -212,6 +212,12 @@
             width: 80%;
             margin-left: 10%;
         }
+        
+        .fixed {
+            position: fixed;
+            width: 100%;
+            top: 1em;
+        }
     </style>
 </head>
 
@@ -229,6 +235,13 @@
     </div>
     <script type="text/javascript" language="javascript" src="projects.json"></script>
     <script>
+        $(window).scroll(function() {
+            var sticky = $('.sticky'),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= 200) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+        });
         var modal = document.getElementById("myModal");
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
@@ -285,7 +298,8 @@
 
         </div>
         <div id="content" class="row" style="width:100%;height:auto;margin-left:5%;margin-right:5%;">
-            <div id="left" data-aos="zoom-in-left" class="column" style="width:30%;min-height:250px;float:left;text-align:left;height:auto;">
+            <div id="left" data-aos="zoom-in-left" class="column sticky" style="width:25%;min-height:20%;float:left;text-align:left;height:auto;">
+
                 <div id="Mailing Adress" style="padding-bottom:1em">
                     <div class="bullet"></div>
                     <div class="title">
@@ -323,7 +337,7 @@
 
             </div>
 
-            <div id="right" data-aos="zoom-in-right" class="column" style="border-left:1px solid #808080;padding-left:5%;margin-right:3%;width:60%;float:left;text-align:left">
+            <div id="right" data-aos="zoom-in-right" class="column" style="border-left:1px solid #808080;padding-left:5%;margin-right:5%;width:60%;float:right;text-align:left">
                 <h1 data-aos="fade-left">LE NGO DUY</h1>
                 <h1 data-aos="fade-left" style="font-weight:200;margin-top:-30px;font-size:63px;">PHONG (J)</h1>
                 <div class="title" ; style="margin-top:-20px;">SOFTWARE ENGINEER</div>
@@ -339,7 +353,7 @@
                 </div>
                 <br />
                 <br />
-                <div id="EDUCATION" style="padding-top:1.5em; width:100%;height:auto;display:inline-block">
+                <div id="EDUCATION" style="padding-top:1.5em; width:100%;height:auto;display:inline-block;">
                     <div class="bullet2"></div>
                     <div class="title">EDUCATION</div>
                     <div style="width:10%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">
