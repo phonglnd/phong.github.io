@@ -1,0 +1,7 @@
+[
+    {
+        "name": "Redshift data pipeline by WAL CDC",
+        "timestamp": "",
+        "abstract": "Build service with teammates to populate pipelines to adapt syncing 4-5 millions of records per day between DBs by WAL CDC. The pipeline consumes CDC messages from Kafka which is triggered via Debezium connector, stream to table API with PyFlink and Scala Flink before importing collected data-by-batches to Redshift DB"
+    }
+]
