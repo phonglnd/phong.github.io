@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700;900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
         h1,
         h4,
         h5,
@@ -212,11 +212,6 @@
             width: 80%;
             margin-left: 10%;
         }
-        
-        .fixed {
-            position: fixed;
-            top: 1em;
-        }
     </style>
     <!-- Scripts -->
     <script type="text/javascript" src="/data/projects.json"></script>
@@ -237,13 +232,6 @@
     </div>
     <script type="text/javascript" language="javascript" src="projects.json"></script>
     <script>
-        $(window).scroll(function() {
-            var sticky = $('.sticky'),
-                scroll = $(window).scrollTop();
-
-            if (scroll >= 200) sticky.addClass('fixed');
-            else sticky.removeClass('fixed');
-        });
         var modal = document.getElementById("myModal");
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
@@ -300,7 +288,7 @@
 
         </div>
         <div id="content" class="row" style="width:100%;height:auto;margin-left:5%;margin-right:5%;">
-            <div id="left" data-aos="zoom-in-left" class="column sticky" style="width:25%;min-height:20%;float:left;text-align:left;height:auto;">
+            <div id="left" data-aos="zoom-in-left" class="column" style="width:25%;min-height:20%;float:left;text-align:left;height:auto;">
 
                 <div id="Mailing Adress" style="padding-bottom:1em">
                     <div class="bullet"></div>
