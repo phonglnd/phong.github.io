@@ -1,6 +1,12 @@
 
-import projects from '/data/projects.json' assert {type: 'json'};
-import experiences from '/data/experiences.json' assert {type: 'json'};
+// import projects from '/data/projects.json' assert {type: 'json'};
+// import experiences from '/data/experiences.json' assert {type: 'json'};
+
+const _projects = await import("/data/projects.json", {assert: {type: "json"}});
+const _experiences = await import("/data/experiences.json", {assert: {type: "json"}});
+
+const projects = _projects.default;
+const experiences = _experiences.default;
 
 var MONTH_MAPPING = {
     1: "01",
