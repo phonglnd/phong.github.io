@@ -37,11 +37,11 @@ function generate_experiences_section(obj) {
     var tmp = '';
     obj.forEach(element => {
         if (element.visible != false) {
-            tmp += '<div id="project" style="width:100%;height:auto;display:inline-block;padding-top:0.2em;padding-bottom:0.5em">';
-            tmp += '<div style="width:15%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">';
+            tmp += '<div id="project" class="portfolio-body-right-section-content-item">';
+            tmp += '<div class="portfolio-body-right-section-content-timeline">';
             if (element.to_year != undefined && element.to_year != "") {
                 tmp += '<h2>';
-                tmp += (element.to_month != undefined && element.to_month != "") ? MONTH_NAME_MAPPING[element.to_month] + " " + String(element.to_year) : String(element.to_year);
+                tmp += (element.to_month != undefined && element.to_month != "") ? MONTH_MAPPING[element.to_month] + "/" + String(element.to_year) : String(element.to_year);
                 tmp += '</h2>';
             } else {
                 tmp += '<h2>NOW</h2>';
@@ -49,10 +49,10 @@ function generate_experiences_section(obj) {
             if (element.from_year != undefined && element.from_year != "") {
                 tmp += '<h3>|</h3>';
                 tmp += '<h2>';
-                tmp += (element.from_month != undefined && element.from_month != "") ? MONTH_NAME_MAPPING[element.from_month] + " " + String(element.from_year) : String(element.from_year);
+                tmp += (element.from_month != undefined && element.from_month != "") ? MONTH_MAPPING[element.from_month] + "/" + String(element.from_year) : String(element.from_year);
                 tmp += '</h2>';
             }
-            tmp += '</div><div style="width:75%;float:left;padding-left:3%">';
+            tmp += '</div><div class="portfolio-body-right-section-content-text hvr hvr-float">';
             tmp += '<h6 style="letter-spacing:0;">';
             tmp += (element.company != undefined && element.company != "") ? String(element.title) + "  |  " + element.company : String(element.title);
             tmp += (element.field != undefined && element.field != "") ? " in " + String(element.field) : "";
@@ -68,11 +68,11 @@ function generate_project_section(obj) {
     var tmp = '';
     obj.forEach(element => {
         if (element.visible != false) {
-            tmp += '<div id="project" style="width:100%;height:auto;display:inline-block"><div style="width:10%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">';
+            tmp += '<div id="project" class="portfolio-body-right-section-content-timeline">';
             tmp += '<div id="year"><h2>';
             tmp += String(element.to_year);
             tmp += '</h2></div></div>';
-            tmp += '<div class="list-detail-item"><h6>';
+            tmp += '<div class="portfolio-body-right-section-content-text hvr hvr-float"><h6>';
             tmp += String(element.name);
             tmp += '</h6><h7>';
             tmp += String(element.abstract);

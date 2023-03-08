@@ -5,280 +5,26 @@
     <meta charset="utf-8" />
     <title>Le Ngo Duy Phong (Jay)</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="hover-min.css" rel="stylesheet" />
+    <link href="src/hover-min.css" rel="stylesheet" />
+    <link href="src/layout.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700;900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-        h1,
-        h4,
-        h5,
-        h6,
-        h7 {
-            font-family: 'Raleway', sans-serif;
-            text-align: justify;
-        }
-        
-        h1 {
-            font-weight: 200;
-            font-size: 41px;
-            padding-top: 0;
-            margin-top: 0;
-        }
-        
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 13px;
-            padding-top: 0;
-            letter-spacing: 1px;
-            margin-top: 0;
-            color: #2b2b2b;
-            line-height: 25px;
-        }
-        
-        h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            font-size: 13px;
-            padding-top: 0;
-            letter-spacing: 1px;
-            margin-top: 0;
-            color: #2b2b2b;
-        }
-        
-        h4 {
-            font-weight: 700;
-            font-size: 14px;
-            padding-top: 0;
-            margin-top: 0;
-            letter-spacing: 0.1em;
-            line-height: 25px;
-            margin: 0;
-        }
-        
-        h5 {
-            font-weight: 300;
-            font-size: 14px;
-            padding-top: 0;
-            margin-top: 0;
-            letter-spacing: 0em;
-            line-height: 25px;
-            margin: 0;
-            padding-bottom: 0.1em;
-        }
-        
-        h6 {
-            font-weight: 900;
-            font-size: 15px;
-            padding-top: 0;
-            margin-top: 0;
-            letter-spacing: 0em;
-            line-height: 25px;
-            margin: 0;
-            padding-bottom: 0.1em;
-            text-align: justify;
-        }
-        
-        h7 {
-            font-size: 13px;
-            padding-top: 0;
-            margin-top: 0;
-            letter-spacing: 0em;
-            line-height: 25px;
-            margin: 0.1em;
-            padding-bottom: 0.5em;
-            line-height: normal;
-            text-align: justify;
-            float: left;
-        }
-        
-        a {
-            font-size: 13px;
-            font-family: Raleway;
-            font-weight: 500;
-            padding: 1em;
-            letter-spacing: 1px;
-            line-height: 18px;
-        }
-        
-        .title {
-            font-family: Raleway;
-            font-size: 17px;
-            letter-spacing: 0.2em;
-            font-weight: 900;
-            margin-left: 0.5em;
-            padding-bottom: 1em;
-        }
-        
-        .bullet {
-            width: 5px;
-            height: 20px;
-            background-color: #d38c76;
-            float: left;
-            margin-right: 0.5em;
-        }
-        
-        .bullet2 {
-            width: 35px;
-            height: 20px;
-            background-color: #d38c76;
-            float: left;
-            margin-right: 0.5em;
-        }
-        
-        .list-detail-item {
-            width: 80%;
-            float: left;
-            padding-left: 3%;
-            padding-bottom: 5px;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-            }
-        }
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        /* The Modal (background) */
-        
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 100px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
-        /* Modal Content */
-        
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-        /* The Close Button */
-        
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        /* The detail Button */
-        
-        .detail-button {
-            color: #d38c76;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        
-        .detail-button:hover,
-        .detail-button:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        
-        .img-format {
-            width: 80%;
-            margin-left: 10%;
-        }
-    </style>
     <!-- Scripts -->
     <script type="text/javascript" src="/data/projects.json"></script>
     <script type="text/javascript" src="/data/experiences.json"></script>
     <script type="module" src="./scripts/display_details.js"></script>
 </head>
 
-<body data-aos="fade-in" style="background-color:white;background: url(texture.png) repeat;width:100%;height:auto;margin:0;padding:0;text-align:center;">
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1 id="projecttitle" class="title">Project</h1>
-            <h2 id="area">Area</h2>
-            <h5 id="description" style="text-align:justify;padding-left:10%;padding-right:10%">Description</h5>
-        </div>
-    </div>
-    <script type="text/javascript" language="javascript" src="projects.json"></script>
-    <script>
-        var modal = document.getElementById("myModal");
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-
-        // When the user clicks on the button, open the modal
-        function showInformation(i) {
-            modal.style.display = "block";
-            $.getJSON("projects.json", function(json) {
-                document.getElementById("projecttitle").innerText = json[i].title.toUpperCase();
-                document.getElementById("area").innerText = json[i].area;
-                document.getElementById("description").innerHTML = (json[i].description);
-
-            });
-
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-
-            }
-        }
-    </script>
-
-    <div data-aos="fade-down" style="width:75%;background: url(texture1.png) repeat;
-                height:100%;background-color:white;margin-left:12.5%;
-                box-shadow:#808080 0px 0px 9px;">
-        <div id="header" style="width:100%;height:250px;margin-left:5%;margin-right:5%">
+<body data-aos="fade-in">
+    <div data-aos="fade-down" class="portfolio-content">
+        <div id="header" class="portfolio-header">
             <div id="J" data-aos="fade-right" style="float:left;width:16%;height:100%;background-color:#d38c76;display:table">
                 <h1 style="width:100%;height:100%;display:table-cell;vertical-align:middle;
                             font-size:117px;color:white;padding-left: 25%;">
                     J.
                 </h1>
             </div>
-            <div id="Cover" data-aos="fade-down" style="float:left;width:65%;height:100%;background:url(A.jpg) no-repeat;
-                               background-size:100%;margin-left:3%;background-position: center 50%; "></div>
-            <div id="icon" data-aos="fade-left" style="float:left;width:5%;height:100%;margin-left:3%;margin-top:3%;
-                                  line-height:30px;text-align:right">
+            <div id="Cover" data-aos="fade-down" class="portfolio-header-cover"></div>
+            <div id="icon" data-aos="fade-left" class="portfolio-header-nav-icon">
                 <a href="https://www.facebook.com/lengoduyphong01" target="_blank"><img class="hvr hvr-float-shadow" src="icons/icon_facebook.svg" width="25" /></a><br />
                 <a href="https://www.instagram.com/phongjuno/" target="_blank"><img class="hvr hvr-float-shadow" src="icons/icon_instagram.svg" width="25" /></a><br />
                 <a href="" target="_blank"><img class="hvr hvr-float-shadow" src="icons/icon_link.svg" width="25" /></a><br />
@@ -287,10 +33,9 @@
             </div>
 
         </div>
-        <div id="content" class="row" style="width:100%;height:auto;margin-left:5%;margin-right:5%;">
-            <div id="left" data-aos="zoom-in-left" class="column" style="width:25%;min-height:20%;float:left;text-align:left;height:auto;">
-
-                <div id="Mailing Adress" style="padding-bottom:1em">
+        <div id="content" class="row portfolio-body">
+            <div id="left" data-aos="zoom-in-left" class="column portfolio-body-left">
+                <div id="Mailing Adress" class="portfolio-body-left-items">
                     <div class="bullet"></div>
                     <div class="title">
                         MAILING ADDRESS
@@ -300,14 +45,14 @@
                     <a>Ho Chi Minh city</a><br />
                     <a>Vietnam</a>
                 </div>
-                <div id="CONTACT INFO" style="margin-top:1em;line-height:25px">
+                <div id="CONTACT INFO" class="portfolio-body-left-items">
                     <div class="bullet"></div>
                     <div class="title">CONTACT INFO</div>
                     <a><img src="icons/phone.png" style="padding-right:0.1em" width="17" /> +84 944 162 495</a><br />
                     <a><img src="icons/mail.png" style="padding-right:0.1em" width="17" /> phonglengoduy@gmail.com</a><br />
                     <a><img src="icons/world.png" style="padding-right:0.1em" width="17" /> phonglnd.github.io</a><br />
                 </div>
-                <div id="LANGUAGES" style="margin-top:1em;line-height:25px">
+                <div id="LANGUAGES" class="portfolio-body-left-items">
                     <div class="bullet"></div>
                     <div class="title">LANGUAGES</div>
                     <a><img src="icons/vietnam.png" style="padding-right:0.1em" width="17" /> Vietnamese</a><br />
@@ -317,61 +62,61 @@
 
             </div>
 
-            <div id="right" data-aos="zoom-in-right" class="column" style="border-left:1px solid #808080;padding-left:5%;margin-right:5%;width:60%;float:right;text-align:left">
+            <div id="right" data-aos="zoom-in-right" class="column portfolio-body-right">
                 <h1 data-aos="fade-left">LE NGO DUY</h1>
                 <h1 data-aos="fade-left" style="font-weight:200;margin-top:-30px;font-size:63px;">PHONG (J)</h1>
                 <div class="title" ; style="margin-top:-20px;">SOFTWARE ENGINEER</div>
-                <div data-aos="fade-in" style="width:175px;height:5px;background-color:#d38c76;border-radius:2.5px"></div>
-                <div id="EDUCATION" style="padding-top:1.5em; width:100%;height:auto;display:inline-block">
+                <div data-aos="fade-in" class="fake-bullet"></div>
+                <div id="ORIENTATION" class="portfolio-body-right-section">
                     <div class="bullet2"></div>
                     <div class="title">ORIENTATION</div>
-                    <div style="width:90%;padding-left:3%">
-                        <h7 style="font-size: 15px;">My first five-year goal is to complete myself step-by-step to become a Full-stack developer who is alway energetic, flexible and have a flair for every work. In order to reach it, my objective is looking forward to opportunity
+                    <div class="portfolio-body-right-section-content">
+                        <h7>My first five-year goal is to complete myself step-by-step to become a Full-stack developer who is alway energetic, flexible and have a flair for every work. In order to reach it, my objective is looking forward to opportunity
                             to work in competitive environment where I can utilize my skills and bring into play my potential while contributing to company's productivity.
                         </h7>
                     </div>
                 </div>
                 <br />
                 <br />
-                <div id="EDUCATION" style="padding-top:1.5em; width:100%;height:auto;display:inline-block;">
+                <div id="EDUCATION" class="portfolio-body-right-section">
                     <div class="bullet2"></div>
                     <div class="title">EDUCATION</div>
-                    <div style="width:10%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">
+                    <div class="portfolio-body-right-section-content-timeline">
                         <h2>2020</h2>
                         <h3>|</h3>
                         <h2>2016</h2>
                     </div>
-                    <div style="width:80%;float:left;padding-left:3%">
+                    <div class="portfolio-body-right-section-content-list hvr hvr-float">
                         <h6>Bachelor of Science</h6>
                         <h7>Computer and Embedded System</h7>
                         <h7>University of Science,Vietnam National University - HCMC</h7>
-                        <div class="list-detail-item">
-                            <h4 style="background-color:#d38c76;margin-right:0.2em;display:inline-block;padding:0 0.5em 0 0.5em">GPA</h4>
-                            <h4 style="display:inline-block;padding:0 0.5em 0 0.5em;font-family:'Montserrat', sans-serif">8.0/10</h4>
-                            <h4 style="display:inline-block;margin:0 0.2em 0 0.2em;font-weight:300;font-family:'Montserrat', sans-serif">|</h4>
-                            <h4 style="display:inline-block;padding:0 0.5em 0 0.5em;font-family:'Montserrat', sans-serif">3.29/4</h4>
+                        <div class="portfolio-body-right-section-content-list hvr hvr-float">
+                            <h4 class="highlight-text">GPA</h4>
+                            <h4 class="bolded-text">8.0/10</h4>
+                            <h4 class="junction-text">|</h4>
+                            <h4 class="bolded-text">3.29/4</h4>
                         </div>
                     </div>
                     <br />
                     <br />
-                    <div id="ACTIVITIES" style="padding-top:1.5em; width:100%;height:auto;display:inline-block">
+                    <div id="ACTIVITIES" class="portfolio-body-right-section">
                         <div class="bullet2"></div>
                         <div class="title">ACTIVITIES / EXPERIENCES</div>
                     </div>
 
-                    <div id="PROJECTS" style="padding-top:1.5em; width:100%;height:auto;display:inline-block">
+                    <div id="PROJECTS" class="portfolio-body-right-section">
                         <div class="bullet2"></div>
                         <div class="title">PROJECTS</div>
                     </div>
 
-                    <div id="AWARDS" style="padding-top:1.5em; width:100%;height:auto;display:inline-block">
+                    <div id="AWARDS" class="portfolio-body-right-section">
                         <div class="bullet2"></div>
                         <div class="title">AWARDS / CERTIFICATES</div>
-                        <div id="project" style="width:100%;height:auto;display:inline-block">
-                            <div style="width:10%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">
+                        <div class="portfolio-body-right-section-content-item">
+                            <div class="portfolio-body-right-section-content-timeline">
                                 <h2>2017</h2>
                             </div>
-                            <div style="width:80%;float:left;padding-left:3%">
+                            <div class="portfolio-body-right-section-content-list hvr hvr-float">
                                 <h5>
                                     The Winner of CiC Startup Contest
                                 </h5>
@@ -381,22 +126,22 @@
                             </div>
                         </div>
 
-                        <div id="project" style="width:100%;height:auto;display:inline-block">
-                            <div style="width:10%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">
+                        <div class="portfolio-body-right-section-content-item">
+                            <div class="portfolio-body-right-section-content-timeline">
                                 <h2>2016</h2>
                             </div>
-                            <div style="width:80%;float:left;padding-left:3%">
+                            <div class="portfolio-body-right-section-content-list hvr hvr-float">
                                 <h7>
                                     The 4th prize in Embedded Programming in National Youth Information Technology Contest
                                 </h7>
                             </div>
                         </div>
 
-                        <div id="project" style="width:100%;height:auto;display:inline-block">
-                            <div style="width:10%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">
+                        <div class="portfolio-body-right-section-content-item">
+                            <div class="portfolio-body-right-section-content-timeline">
                                 <h2>2015</h2>
                             </div>
-                            <div style="width:80%;float:left;padding-left:3%">
+                            <div class="portfolio-body-right-section-content-list hvr hvr-float">
                                 <h7>
                                     The 3rd and 4th prize in Embedded Programming and Software Programming in National Youth Information Technology Contest
                                 </h7>
@@ -405,11 +150,11 @@
                                 </h7>
                             </div>
                         </div>
-                        <div id="project" style="width:100%;height:auto;display:inline-block">
-                            <div style="width:10%;float:left;text-align:center;border-right:1px solid #d38c76;height:auto;">
+                        <div class="portfolio-body-right-section-content-item">
+                            <div class="portfolio-body-right-section-content-timeline">
                                 <h2>2014</h2>
                             </div>
-                            <div style="width:80%;float:left;padding-left:3%">
+                            <div class="portfolio-body-right-section-content-list hvr hvr-float">
                                 <h7>
                                     The 3rd prize in Embedded Programming in National Youth Information Technology Contest
                                 </h7>
