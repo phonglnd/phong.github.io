@@ -1,7 +1,5 @@
-var projects = []
-var experiences = []
-fetch('/data/projects.json').then(res => res.json()).then(data => projects = data);
-fetch('/data/experiences.json').then(res => res.json()).then(data => experiences = data);
+import projects from '/data/projects.json' assert { type: 'json' };
+import experiences from '/data/experiences.json' assert { type: 'json' };
 
 var MONTH_MAPPING = {
     1: "01",
