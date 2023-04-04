@@ -1,4 +1,4 @@
-[
+export var experiences = [
     {
       "title": "BACKEND ENGINEER",
       "company": "PARCEL PERFORM PTE LTD.",

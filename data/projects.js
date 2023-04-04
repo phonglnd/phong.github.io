@@ -1,4 +1,4 @@
-[
+export var projects = [
   {
     "name": "Logistics Intelligence alerting center",
     "from_month": 12,

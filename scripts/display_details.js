@@ -1,5 +1,5 @@
-import projects from '/data/projects.json' assert { type: 'json' };
-import experiences from '/data/experiences.json' assert { type: 'json' };
+import { projects } from '../data/projects.js';
+import { experiences } from '../data/experiences.js';
 
 var MONTH_MAPPING = {
     1: "01",
