@@ -12,7 +12,7 @@ export var projects = [
     "from_month": "",
     "from_year": 2023,
     "to_month": "",
-    "to_year": 2024,
+    "to_year": 2023,
     "abstract": "Collaborated with team members to develop a booking shipping service using the Django application in order to enhance the E2E eCommerce platform. Utilized Django framework in the booking shipping service that seamlessly integrates with various global carriers' platforms for efficient shipment handling, and integrated with Celery to distribute tasks and consolidate progress results, enabling smooth processing of a large volume of shipments with a structured booking flow."
   },
   {
