@@ -1,5 +1,21 @@
 export var projects = [
   {
+    "name": "Bot detection bypass",
+    "from_month": "",
+    "from_year": 2023,
+    "to_month": "",
+    "to_year": 2024,
+    "abstract": "Collaborated with team members to develop a bot detection service that is able to bypass source tracking sites for eCommerce domains. Utilized Python image processing libraries to address CAPTCHA vision challenges and implement solutions for solving CAPTCHAs."
+  },
+  {
+    "name": "Booking shipping service",
+    "from_month": "",
+    "from_year": 2023,
+    "to_month": "",
+    "to_year": 2024,
+    "abstract": "Collaborated with team members to develop a booking shipping service using the Django application in order to enhance the E2E eCommerce platform. Utilized Django framework in the booking shipping service that seamlessly integrates with various global carriers' platforms for efficient shipment handling, and integrated with Celery to distribute tasks and consolidate progress results, enabling smooth processing of a large volume of shipments with a structured booking flow."
+  },
+  {
     "name": "Logistics Intelligence alerting center",
     "from_month": 12,
     "from_year": 2022,
