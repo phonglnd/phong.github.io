@@ -21,7 +21,7 @@ export var projects = [
     "from_year": 2022,
     "to_month": 2,
     "to_year": 2023,
-    "abstract": "Build a service used for Logistics Intelligence alerting by a Django application-based allowing users to configure their own alerts, along with a Dagster service handling schedule and execute the metrics evaluation and triggering alerts. The application is able to get the metrics from the Redshift database via Jaspersoft as a third party."
+    "abstract": "Led, designed, and implemented an alert center service used for Logistics Intelligence through a Django application, and integrated with Dagster for scheduling and executing evaluation by metrics from AWS Redshift database and Jaspersoft as a third-party tool, to trigger alerts via Webhook and e-mails."
   },
   {
     "name": "Redshift data pipeline by WAL CDC",
@@ -29,15 +29,15 @@ export var projects = [
     "from_year": 2022,
     "to_month": "",
     "to_year": 2022,
-    "abstract": "Build a service with teammates to populate pipelines to adapt syncing 4-5 millions of records per day between DBs by WAL CDC. The pipeline consumes CDC messages from Kafka which is triggered via Debezium connector, stream to table API with PyFlink and Scala Flink before importing collected data-by-batches to Redshift DB."
+    "abstract": "Designed solution, and implemented with team members to establish pipelines for efficiently synchronizing 4-5 million records daily between databases using Write-Ahead Logging (WAL) Change Data Capture (CDC). The process involves consuming CDC messages from Apache Kafka triggered by the Debezium connector, streaming them through table API with PyFlink and Scala Flink, and subsequently importing the collected data in batches into AWS Redshift DB."
   },
   {
-    "name": "Migration Tools",
+    "name": "Data Migration Tools",
     "from_month": "",
     "from_year": 2021,
     "to_month": "",
     "to_year": 2021,
-    "abstract": "Take advantage of Celery library to implement a tool for migration tasks under batch processing architecture, which is really helpful to sync data between DBs, migrate obsoleted data to a newer format, change the data structure, etc. This Migration Tool has been built with Django script-based, Redis as a broker along with customizing auto-scaling to manage resources via K8s API. This helps to reduce the migration time of 1 million records from 1 days to 2 hours."
+    "abstract": "Utilized the Celery framework to develop a tool for executing migration tasks within a batch processing system, offering significant assistance in synchronizing data between databases, updating outdated data to a newer format, and modifying data structures. The Migration Tool has been constructed using a Django script-based approach with Redis serving as a broker and customized auto-scaling for resource management via K8s API. This has led to a reduction in the migration time from 1 day to 2 hours for processing 1 million records."
   },
   {
     "name": "Redshift Sink project: Sync data to Redshift DB",
@@ -45,7 +45,7 @@ export var projects = [
     "from_year": 2021,
     "to_month": "",
     "to_year": 2021,
-    "abstract": "Build and maintain the service which is used to sync 1-2 millions of records per day from a source DB to Redshift analytic DB. This Python project is built to consume data from Kafka message queue which is triggered from an application, do aggregation and transformation to import to Redshift DB via AWS S3 storage."
+    "abstract": "Developed and maintained the system responsible for synchronizing 1-2 million entries daily from a source database to the AWS Redshift analytic database. Python application undertook the ETL process, consumed data from a Kafka message queue, triggered by an application, performed aggregation and transformation, and then loaded it into the Redshift database via AWS S3 storage. This data synchronization process ensures that the Redshift DB is up-to-date and readily available for analytics and reporting purposes."
   },
   {
     "name": "Applying CNN For Cardiac Arrhythmia Classification Using ECG Data",
@@ -53,6 +53,6 @@ export var projects = [
     "from_year": 2021,
     "to_month": "",
     "to_year": 2021,
-    "abstract": "Researched CNN+ResNet architecture and Electrocardiography (ECG) combined with analyzing ECG dataset to design the model which can classify 9 types of cardiac arrhythmia in Python and Keras TensorFlow."
+    "abstract": "Researched the CNN+ResNet structure and Electrocardiography paired with examining ECG dataset in order to create a model capable of categorizing 9 different types of cardiac arrhythmia using Python and Keras TensorFlow."
   }
 ]

@@ -7,7 +7,7 @@ export var experiences = [
       "from_year": 2020,
       "to_month": "",
       "to_year": "",
-      "abstract": "- Working as Backend Engineer at Mid-level to develop e-commerce SaaS with scalable systems with microservices-based- Being the maintainer of synchronization service which undertakes to sync main database to secondary storage used for Logistics Intelligence, as well as joining to do solutions and design high-traffic data synchrony pipeline\n\n- Being takeover of data mapping features to standardize incoming original data from customers\n\n- Joining multiple teams across worldwide offices to develop multiple features to integrate with e-commerce merchants and their carrier partners in scraping, receiving, standardizing, and storing data"
+      "abstract": "- Collaborated with a team of developers to develop e-commerce SaaS with scalable systems with microservices-based architecture for the international shipping and logistics industry.\n- Utilized Python Django for web-based application development by leveraging AWS services for cloud-based deployment and data storage, utilized Scala Flink to build and develop a real-time data processing pipeline, to work and ensure high performance and reliability with huge traffic data with billions of records.\n- Owned, designed, and maintained ETL services to synchronize data from Postgres DB to multiple secondary storages with Apache Kafka and Debezium by Change Data Capture technique, for real-time data streaming, efficiency, and scalability in modern data management."
     },
     {
       "title": "INTERN",
@@ -17,8 +17,7 @@ export var experiences = [
       "from_year": 2019,
       "to_month": 5,
       "to_year": 2019,
-      "abstract": "- Researching deep learning and digital signal processing in diagnosing Neurological Disorders problems with EEG\n\n- Working with multiple teams and worldwide members in Machine Learning- Gaining valuable experiences in researching, reading technique documents, and professional working attitude\n\n- Improving skills such as communication, teamwork, presentation and etc."
-    },
+      "abstract": "- Conducted research on deep learning algorithms and digital signal processing for diagnosing Neurological Disorders problems with EEG recognition.\n- Worked together with multiple teams and worldwide members to gain valuable experiences in researching, reading technique documents, and professional working attitude."},
     {
       "title": "CURRICULUM DEVELOPER AND LECTURER",
       "company": "TEKY STEAM ACADEMY",
